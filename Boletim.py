@@ -17,13 +17,9 @@ while True:
     cont += 1
     primaria.append(secundaria[:])
     secundaria.clear()
-    continuar = str(input("Quer continuar ? [S/N]")).upper().strip()[0]
-    if continuar == 'N':
-        break
-    while continuar not in "S":
-        continuar = str(input("Não entendi, digite apenas S ou N: ")).upper().strip()[0]
-        if continuar == 'SN':
-            break
+    continuar = str(input('Quer continuar ? [S/N]')).upper().strip()[0]
+    while continuar not in 'SN':
+        continuar = str(input('Quer continuar ? [S/N]'))
     if continuar == 'N':
         break
 #print(primaria)
